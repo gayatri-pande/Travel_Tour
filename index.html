@@ -10,14 +10,25 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
   </head>
   <body>
     <section id="navigation">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-      <img src="img/imgi_1_logox1.png" alt="Bootstrap" width="130" height="30">
-    </a>
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="img/imgi_1_logox1.png"
+              alt="Bootstrap"
+              width="130"
+              height="30"
+            />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -32,7 +43,9 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Aboutus.html">About us</a>
@@ -41,39 +54,978 @@
                 <a class="nav-link" href="TourList.html">Tour List</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="RoomList.html">Room List</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
-               <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Search
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="TourSearch.html">Tour Search</a></li>
-            <li><a class="dropdown-item" href="RoomSearch.html">Room Search</a></li>
-           
-          </ul>
-        </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Search
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="TourSearch.html"
+                      >Tour Search</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="RoomSearch.html"
+                      >Room Search</a
+                    >
+                  </li>
+                </ul>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="Blog.html">Blog</a>
               </li>
-               
             </ul>
-            
-              <button class="btn btn-outline-primary " type="submit">
-                login
-              </button>
-            </form>
+
+            <button class="btn btn-outline-primary" type="submit">login</button>
+            <!-- </form> -->
           </div>
         </div>
       </nav>
     </section>
-
     <!-- end of navigation  -->
 
-    <section id="hero-section">
+    <!-- Hero Section -->
+    <section class="hero-section py-5">
+      <div class="container position-relative">
+        <div class="row align-items-center">
+          <!-- Left Text -->
+          <div class="col-lg-6">
+            <button
+              class="btn btn-light text-success fw-semibold px-4 py-2 shadow-sm rounded-pill mb-3"
+            >
+              Book With Us!
+            </button>
+            <h1 class="fw-bold display-4 hero-font">
+              Find Next Place<br />To <span class="blue-text">Visit</span>
+            </h1>
+            <p class="text-secondary fs-5 mt-3">
+              Discover amazing places at exclusive deals.<br />
+              Eat, Shop, Visit interesting places around the world.
+            </p>
 
+            <!-- Search Box -->
+
+            <div class="search-box bg-white shadow-lg rounded-4 p-4 mt-5">
+              <form class="row g-3 align-items-center">
+                <div class="col-md-4">
+                  <label class="form-label fw-semibold text-muted"
+                    >Keywords</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control border-0 border-bottom"
+                    placeholder="Type Your Keywords"
+                  />
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label fw-semibold text-muted"
+                    >Destination</label
+                  >
+                  <select class="form-select border-0 border-bottom">
+                    <option>Any</option>
+                    <option>Paris</option>
+                    <option>London</option>
+                    <option>Tokyo</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label fw-semibold text-muted"
+                    >Duration</label
+                  >
+                  <select class="form-select border-0 border-bottom">
+                    <option>Any</option>
+                    <option>1-3 Days</option>
+                    <option>4-7 Days</option>
+                    <option>1+ Week</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <button
+                    type="submit"
+                    class="btn btn-primary w-100 rounded-4 fw-semibold py-2"
+                  >
+                    <i class="bi bi-search me-2"></i>Search Now
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="col-lg-6 d-none d-lg-block">
+            <img
+              src="img/imgi_3_hero-right.jpg"
+              alt="Travel Destination"
+              class="img-fluid rounded-4 shadow-sm w-100"
+            />
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- end of hero-section  -->
+    <!-- end of the hero section  -->
+
+    <section class="py-5 text-center">
+      <h2 class="fw-bold mb-3">
+        Top <span class="text-primary">Destinations</span>
+      </h2>
+      <p class="text-muted mb-5">
+        Explore our top destinations by more than 100,000+ customers around the
+        world.
+      </p>
+    </section>
+
+    <!-- end of top Destination section  -->
+
+    <section class="destination-card">
+      <div class="container py-5">
+        <div class="row g-4">
+          <!-- Western Europe -->
+          <div class="col-md-4">
+            <div class="card text-white">
+              <img
+                src="img/imgi_4_cat-eu-1.jpg"
+                class="card-img"
+                alt="Western Europe"
+              />
+              <span
+                class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-2 fw-semibold"
+                >3 tours</span
+              >
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-4">Western Europe</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- South Africa -->
+          <div class="col-md-4">
+            <div class="card text-white">
+              <img
+                src="img/imgi_5_cat-soft-africa.jpg"
+                class="card-img"
+                alt="South Africa"
+              />
+              <span
+                class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-2 fw-semibold"
+                >2 tours</span
+              >
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-4">South Africa</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scandinavia -->
+          <div class="col-md-4">
+            <div class="card text-white">
+              <img
+                src="img/imgi_6_cat-scan.jpg"
+                class="card-img"
+                alt="Scandinavia"
+              />
+              <span
+                class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-2 fw-semibold"
+                >2 tours</span
+              >
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-4">Scandinavia</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Egypt -->
+          <div class="col-md-4">
+            <div class="card text-white">
+              <img
+                src="img/imgi_7_cat-egypt.jpg"
+                class="card-img"
+                alt="Egypt"
+              />
+              <span
+                class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-2 fw-semibold"
+                >3 tours</span
+              >
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-4">Egypt</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Asia -->
+          <div class="col-md-4">
+            <div class="card text-white">
+              <img src="img/imgi_8_cat-asia.jpg" class="card-img" alt="Asia" />
+              <span
+                class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-2 fw-semibold"
+                >5 tours</span
+              >
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-4">Asia</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- America -->
+          <div class="col-md-4">
+            <div class="card text-white">
+              <img
+                src="img/imgi_9_cat-america.jpg"
+                class="card-img"
+                alt="America"
+              />
+              <span
+                class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-2 fw-semibold"
+                >4 tours</span
+              >
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-4">America</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container position-relative">
+        <!-- Title -->
+        <h1 class="text-center fw-bold mb-5">
+          Popular <span class="text-primary">Tours</span>
+        </h1>
+
+        <!-- Carousel -->
+        <div id="popularTours" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                  <div
+                    class="position-relative overflow-hidden rounded-4 shadow"
+                    style="height: 480px"
+                  >
+                    <img
+                      src="img/imgi_10_nikolay-vorobyev-QJ2HGuSSQz0-unsplash-600x800.jpg"
+                      class="img-fluid h-100 w-100 object-fit-cover rounded-4"
+                      alt="Austria"
+                    />
+                    <span
+                      class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-2 fs-6 rounded-3 shadow-sm"
+                    >
+                      Special Offer
+                    </span>
+                    <div
+                      class="position-absolute bottom-0 start-0 p-4 text-white w-100"
+                      style="
+                        background: linear-gradient(
+                          to top,
+                          rgba(0, 0, 0, 0.7),
+                          transparent
+                        );
+                      "
+                    >
+                      <h4 class="fw-bold mb-0">Two Moscow Tour of 7 days</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                  <div
+                    class="position-relative overflow-hidden rounded-4 shadow"
+                    style="height: 480px"
+                  >
+                    <img
+                      src="img/imgi_11_sorasak-9DgwO_ihqL0-unsplash-600x800.jpg"
+                      class="img-fluid h-100 w-100 object-fit-cover rounded-4"
+                      alt="Argentina"
+                    />
+                    <div
+                      class="position-absolute bottom-0 start-0 p-4 text-white w-100"
+                      style="
+                        background: linear-gradient(
+                          to top,
+                          rgba(0, 0, 0, 0.7),
+                          transparent
+                        );
+                      "
+                    >
+                      <h4 class="fw-bold mb-0">
+                        Austria – 6 Days in Vienna, Hallstatt
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                  <div
+                    class="position-relative overflow-hidden rounded-4 shadow"
+                    style="height: 480px"
+                  >
+                    <img
+                      src="img/imgi_12_brantley-neal-SiPPNnWzD_o-unsplash-600x800.jpg"
+                      class="img-fluid h-100 w-100 object-fit-cover rounded-4"
+                      alt="India"
+                    />
+                    <span
+                      class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-2 fs-6 rounded-3 shadow-sm"
+                    >
+                      25% Off
+                    </span>
+                    <div
+                      class="position-absolute bottom-0 start-0 p-4 text-white w-100"
+                      style="
+                        background: linear-gradient(
+                          to top,
+                          rgba(0, 0, 0, 0.7),
+                          transparent
+                        );
+                      "
+                    >
+                      <h4 class="fw-bold mb-0">
+                        Argentina – Great Diving Trip
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== Slide 2 ===== -->
+            <div class="carousel-item">
+              <div class="row g-4 justify-content-center">
+                <!-- Card 4 -->
+                <div class="col-md-4">
+                  <div
+                    class="position-relative overflow-hidden rounded-4 shadow"
+                    style="height: 480px"
+                  >
+                    <img
+                      src="img/imgi_13_thais-cordeiro-4TVFPTv_wjE-unsplash-600x800.jpg"
+                      class="img-fluid h-100 w-100 object-fit-cover rounded-4"
+                      alt="France"
+                    />
+                    <span
+                      class="badge bg-primary position-absolute top-0 end-0 m-3 px-3 py-2 fs-6 rounded-3 shadow-sm"
+                    >
+                      15% Off
+                    </span>
+                    <div
+                      class="position-absolute bottom-0 start-0 p-4 text-white w-100"
+                      style="
+                        background: linear-gradient(
+                          to top,
+                          rgba(0, 0, 0, 0.7),
+                          transparent
+                        );
+                      "
+                    >
+                      <h4 class="fw-bold mb-0">India – Mumbai, New Delhi</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4">
+                  <div
+                    class="position-relative overflow-hidden rounded-4 shadow"
+                    style="height: 480px"
+                  >
+                    <img
+                      src="img/imgi_14_madhu-shesharam-qvO4yjZo-Mc-unsplash-600x800.jpg"
+                      class="img-fluid h-100 w-100 object-fit-cover rounded-4"
+                      alt="Italy"
+                    />
+                    <div
+                      class="position-absolute bottom-0 start-0 p-4 text-white w-100"
+                      style="
+                        background: linear-gradient(
+                          to top,
+                          rgba(0, 0, 0, 0.7),
+                          transparent
+                        );
+                      "
+                    >
+                      <h4 class="fw-bold mb-0">
+                        America – Grand canyon, Golden Gate
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-4">
+                  <div
+                    class="position-relative overflow-hidden rounded-4 shadow"
+                    style="height: 480px"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1493558103817-58b2924bce98"
+                      class="img-fluid h-100 w-100 object-fit-cover rounded-4"
+                      alt="Bali"
+                    />
+                    <div
+                      class="position-absolute bottom-0 start-0 p-4 text-white w-100"
+                      style="
+                        background: linear-gradient(
+                          to top,
+                          rgba(0, 0, 0, 0.7),
+                          transparent
+                        );
+                      "
+                    >
+                      <h4 class="fw-bold mb-0">Bali – Temple Tour</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y"
+            type="button"
+            data-bs-target="#popularTours"
+            data-bs-slide="prev"
+            style="transform: translate(-70%, -50%)"
+          >
+            <span
+              class="carousel-control-prev-icon bg-dark rounded-circle p-3 shadow"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button
+            class="carousel-control-next position-absolute top-50 end-0 translate-middle-y"
+            type="button"
+            data-bs-target="#popularTours"
+            data-bs-slide="next"
+            style="transform: translate(70%, -50%)"
+          >
+            <span
+              class="carousel-control-next-icon bg-dark rounded-circle p-3 shadow"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="freshly_added">
+      <!-- Title -->
+      <h1 class="text-center fw-bold mb-5">
+        Freshly <span class="text-primary">Added</span>
+      </h1>
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row gx-3">
+              <!-- Card 1 -->
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="custom-card">
+                  <div class="custom-card-img">
+                    <img
+                      src="img/imgi_15_geran-de-klerk-N9s3FjzsstM-unsplash-700x500.jpg"
+                    />
+                    <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                  <div class="custom-card-body">
+                    <h4 class="card-title">Africa – Amazing African Safari</h4>
+                    <div class="rating">
+                      <span class="stars">★★★★★</span
+                      ><span class="review">(1 Review)</span>
+                    </div>
+                    <p class="price-text">
+                      From <span class="price">$100</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="custom-card">
+                  <div class="custom-card-img">
+                    <img
+                      src="img/imgi_16_omar-yehia-v8qWbKNEAIE-unsplash-700x500.jpg"
+                    />
+                    <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                  <div class="custom-card-body">
+                    <h4 class="card-title">Dubai – All Stunning Places</h4>
+                    <div class="rating">
+                      <span class="stars">★★★★★</span
+                      ><span class="review">(1 Review)</span>
+                    </div>
+                    <p class="price-text">
+                      From <span class="price">$900</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="custom-card">
+                  <div class="custom-card-img">
+                    <img
+                      src="img/imgi_17_benjamin-voros-JhjDL3TZKJk-unsplash-700x500.jpg"
+                    />
+                    <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                  <div class="custom-card-body">
+                    <h4 class="card-title">Venice, Rome and Milan – 9 Days</h4>
+                    <div class="rating">
+                      <span class="stars">★★★★★</span
+                      ><span class="review">(1 Review)</span>
+                    </div>
+                    <p class="price-text">
+                      From <span class="price">$750</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="custom-card">
+                  <div class="custom-card-img">
+                    <img
+                      src="img/imgi_18_stephen-leonardi-UWtb-3v6jQ-unsplash-700x500.jpg"
+                    />
+                    <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                  <div class="custom-card-body">
+                    <h4 class="card-title">
+                      Enquiry Form Only – Paris – 6 Days
+                    </h4>
+                    <div class="rating">
+                      <span class="stars">★★★★★</span
+                      ><span class="review">(1 Review)</span>
+                    </div>
+                    <p class="price-text">
+                      From <span class="price">$1,050</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row gx-3">
+              <!-- Card 5 -->
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="custom-card">
+                  <div class="custom-card-img">
+                    <img
+                      src="img/imgi_19_pascal-debrunner-KFq835juuy4-unsplash-700x500.jpg"
+                    />
+                    <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                  <div class="custom-card-body">
+                    <h4 class="card-title">5-Day Oahu Tour: Honolulu</h4>
+                    <div class="rating">
+                      <span class="stars">★★★★★</span
+                      ><span class="review">(1 Review)</span>
+                    </div>
+                    <p class="price-text">
+                      From <span class="price">$750</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="custom-card">
+                  <div class="custom-card-img">
+                    <img
+                      src="img/imgi_20_victor-ene-CmRp_0MG8f0-unsplash-700x500.jpg"
+                    />
+                    <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                  <div class="custom-card-body">
+                    <h4 class="card-title">Molokini and Turtle Snorkeling</h4>
+                    <div class="rating">
+                      <span class="stars">★★★★★</span
+                      ><span class="review">(1 Review)</span>
+                    </div>
+                    <p class="price-text">
+                      From <span class="price">$750</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 7 -->
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="custom-card">
+                  <div class="custom-card-img">
+                    <img
+                      src="img/imgi_21_nikolay-vorobyev-QJ2HGuSSQz0-unsplash-700x500.jpg"
+                    />
+                    <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                  <div class="custom-card-body">
+                    <h4 class="card-title">Two Moscow Tour of 7 days</h4>
+                    <div class="rating">
+                      <span class="stars">★★★★★</span
+                      ><span class="review">(1 Review)</span>
+                    </div>
+                    <p class="price-text">
+                      From <span class="price">$750</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 8 -->
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="custom-card">
+                  <div class="custom-card-img">
+                    <img src="img/imgi_22_iStock-1168406196-700x500.jpg" />
+                    <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                  <div class="custom-card-body">
+                    <h4 class="card-title">
+                      Pais – Eiffel Tower, Notre Dame Cath..
+                    </h4>
+                    <div class="rating">
+                      <span class="stars">★★★★★</span
+                      ><span class="review">(1 Review)</span>
+                    </div>
+                    <p class="price-text">
+                      From <span class="price">$750</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="hotel_rooms">
+      <!-- Title -->
+      <h1 class="text-center fw-bold mb-5">
+        Hotel <span class="text-primary">Rooms</span>
+      </h1>
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row gx-3">
+              <!-- Card 1 -->
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="custom-card">
+                  <div class="custom-card-img">
+                    <img
+                      src="img/imgi_24_andrew-neel-T0eb55DxDN4-unsplash-700x500.jpg"
+                    />
+                    <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                  <div class="custom-card-body">
+                    <h4 class="card-title">Dubai – All Stunning Places</h4>
+                    <div class="rating">
+                      <span class="stars">★★★★★</span
+                      ><span class="review">(1 Review)</span>
+                    </div>
+                    <p class="price-text">
+                      From <span class="price">$1,200</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="custom-card">
+                  <div class="custom-card-img">
+                    <img
+                      src="img/imgi_25_christopher-jolly-GqbU78bdJFM-unsplash-700x500.jpg"
+                    />
+                    <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                  <div class="custom-card-body">
+                    <h4 class="card-title">Beautiful Landscape</h4>
+                    <div class="rating">
+                      <span class="stars">★★★★★</span
+                      ><span class="review">(1 Review)</span>
+                    </div>
+                    <p class="price-text">
+                      From <span class="price">$900</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="custom-card">
+                  <div class="custom-card-img">
+                    <img
+                      src="img/imgi_26_collov-home-design-LSpkE5OCD_8-unsplash-700x500.jpg"
+                    />
+                    <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                  <div class="custom-card-body">
+                    <h4 class="card-title">Mountain Adventure</h4>
+                    <div class="rating">
+                      <span class="stars">★★★★★</span
+                      ><span class="review">(1 Review)</span>
+                    </div>
+                    <p class="price-text">
+                      From <span class="price">$750</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="custom-card">
+                  <div class="custom-card-img">
+                    <img
+                      src="img/imgi_27_ialicante-mediterranean-homes-475803-unsplash-700x500.jpg"
+                    />
+                    <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                  <div class="custom-card-body">
+                    <h4 class="card-title">City Lights</h4>
+                    <div class="rating">
+                      <span class="stars">★★★★★</span
+                      ><span class="review">(1 Review)</span>
+                    </div>
+                    <p class="price-text">
+                      From <span class="price">$1,050</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row gx-3">
+              <!-- Card 5 -->
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="custom-card">
+                  <div class="custom-card-img">
+                    <img
+                      src="img/imgi_28_shop-slo-vhztm9QC0L0-unsplash-700x500.jpg"
+                    />
+                    <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                  <div class="custom-card-body">
+                    <h4 class="card-title">Mountain Adventure</h4>
+                    <div class="rating">
+                      <span class="stars">★★★★★</span
+                      ><span class="review">(1 Review)</span>
+                    </div>
+                    <p class="price-text">
+                      From <span class="price">$750</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="custom-card">
+                  <div class="custom-card-img">
+                    <img
+                      src="img/imgi_29_sidekix-media-g8tb9SXqZVQ-unsplash-700x500.jpg"
+                    />
+                    <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                  <div class="custom-card-body">
+                    <h4 class="card-title">Mountain Adventure</h4>
+                    <div class="rating">
+                      <span class="stars">★★★★★</span
+                      ><span class="review">(1 Review)</span>
+                    </div>
+                    <p class="price-text">
+                      From <span class="price">$750</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 7 -->
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="custom-card">
+                  <div class="custom-card-img">
+                    <img
+                      src="img/imgi_26_collov-home-design-LSpkE5OCD_8-unsplash-700x500.jpg"
+                    />
+                    <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                  <div class="custom-card-body">
+                    <h4 class="card-title">Mountain Adventure</h4>
+                    <div class="rating">
+                      <span class="stars">★★★★★</span
+                      ><span class="review">(1 Review)</span>
+                    </div>
+                    <p class="price-text">
+                      From <span class="price">$750</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 8 -->
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="custom-card">
+                  <div class="custom-card-img">
+                    <img
+                      src="img/imgi_27_ialicante-mediterranean-homes-475803-unsplash-700x500.jpg"
+                    />
+                    <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                  </div>
+                  <div class="custom-card-body">
+                    <h4 class="card-title">Mountain Adventure</h4>
+                    <div class="rating">
+                      <span class="stars">★★★★★</span
+                      ><span class="review">(1 Review)</span>
+                    </div>
+                    <p class="price-text">
+                      From <span class="price">$750</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- end of room section  -->
+
+    <!-- <section class="discover">
+     
+        <div class="col-6 col-md-12 card">
+          <div class="card" style="width: 18rem">
+            <img
+              src="img/pexels-pixabay-39691.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title card-text">Discover Special Deals!</h5>
+              <p class="card-text card-text">
+                Make sure to check out these special promotions
+              </p>
+              <a href="#" class="btn btn-primary">See Tours </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-12 card-txt">
+          <h2>Don’t miss a thing</h2>
+          <p>
+            Get update to special deals and exclusive offers. Sign up to our
+            newsletter!
+          </p>
+          <form action="" class="">
+            <input type="email" name="" id="" />
+            <button>Subscribe</button>
+          </form>
+        </div>
+      
+    </section> -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-3">
+            <h5 class="text-white mb-3">Travel Tour</h5>
+            <p>
+              Explore the world with ease and comfort. Book your next adventure
+              today.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h6 class="text-white mb-3">Contact</h6>
+            <p><i class="bi bi-telephone"></i> +91-9876543210</p>
+            <p><i class="bi bi-envelope"></i> contact@traveltour.com</p>
+          </div>
+          <div class="col-md-3">
+            <h6 class="text-white mb-3">Useful Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Our Blog</a></li>
+              <li><a href="#">Help & Support</a></li>
+              <li><a href="#">Our Partners</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6 class="text-white mb-3">Pay Safely With Us</h6>
+            <p>Secure payments processed with SSL encryption.</p>
+          </div>
+        </div>
+        <div class="text-center border-top pt-3">
+          <small>© 2025 TravelTour. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

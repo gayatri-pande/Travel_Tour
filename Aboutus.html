@@ -1,19 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About us</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Travel Tour</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-
     <section id="navigation">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-      <img src="img/imgi_1_logox1.png" alt="Bootstrap" width="130" height="30">
-    </a>
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="img/imgi_1_logox1.png"
+              alt="Bootstrap"
+              width="130"
+              height="30"
+            />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -28,7 +45,9 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Aboutus.html">About us</a>
@@ -37,34 +56,484 @@
                 <a class="nav-link" href="TourList.html">Tour List</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="RoomList.html">Room List</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
-               <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Search
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="TourSearch.html">Tour Search</a></li>
-            <li><a class="dropdown-item" href="RoomSearch.html">Room Search</a></li>
-           
-          </ul>
-        </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Search
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="TourSearch.html"
+                      >Tour Search</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="RoomSearch.html"
+                      >Room Search</a
+                    >
+                  </li>
+                </ul>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="Blog.html">Blog</a>
               </li>
-               
             </ul>
-            
-              <button class="btn btn-outline-primary " type="submit">
-                login
-              </button>
-            </form>
+
+            <button class="btn btn-outline-primary" type="submit">login</button>
+            <!-- </form> -->
           </div>
         </div>
       </nav>
     </section>
-    <!-- end of navigation section  -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- end of navigation  -->
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="fw-bold">About Us</h1>
+        <p class="text-muted">The Story About Us</p>
+      </div>
+    </section>
+
+    <!-- INTRO SECTION -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+              class="img-fluid rounded mb-3"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <h3 class="fw-bold">
+              We have been in the tourism industry for more than 20 years
+            </h3>
+            <p class="text-muted">
+              Leave your guidebooks at home and dive into the local cultures
+              that make each destination special. We'll connect you with
+              exclusive experiences.
+            </p>
+
+            <div class="d-flex mb-3">
+              <div class="me-3 feature-icon">
+                <i class="fa-solid fa-plane-departure"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold">Book With Confidence</h6>
+                <p class="text-muted small">
+                  Each trip is crafted to let you enjoy the moment.
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-3">
+              <div class="me-3 feature-icon">
+                <i class="fa-solid fa-earth-africa"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold">Freedom to Explore</h6>
+                <p class="text-muted small">
+                  Feel free to explore while we handle the details.
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-3">
+              <div class="me-3 feature-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold">Dive into Culture</h6>
+                <p class="text-muted small">
+                  Experience culture through curated trips.
+                </p>
+              </div>
+            </div>
+
+            <a class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Frequently Asked Questions</h2>
+
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                   Can I get the refund?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    We have you covered! We will email you as items in your order ship, or if there are updates on the status of your order. Can’t find the email? Click here to check the status of your order.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    A Toggle Box Title
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    We have you covered! We will email you as items in your order ship, or if there are updates on the status of your order. Can’t find the email?
+Click here to check the status of your order.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    My discount code is not working, what do I do?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                   We have you covered! We will email you as items in your order ship, or if there are updates on the status of your order. Can’t find the email?
+Click here to check the status of your order.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Do I need to apply visa?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    We have you covered! We will email you as items in your order ship, or if there are updates on the status of your order. Can’t find the email?
+Click here to check the status of your order.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                 Do you have insurance covered?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    We have you covered! We will email you as items in your order ship, or if there are updates on the status of your order. Can’t find the email?
+Click here to check the status of your order.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    How many people can stay in the hotel?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Due to carrier delays, please allow up to 14 business days for your order to be delivered via our standard shipping method (“standard” at checkout). Can’t find the email? Click here 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Do you except deposit payment?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Due to carrier delays, please allow up to 14 business days for your order to be delivered via our standard shipping method (“standard” at checkout). Can’t find the email? Click here 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Which credit cards do you except?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Due to carrier delays, please allow up to 14 business days for your order to be delivered via our standard shipping method (“standard” at checkout). Can’t find the email? Click here .
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Are the tours included with travel fare?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Due to carrier delays, please allow up to 14 business days for your order to be delivered via our standard shipping method (“standard” at checkout).
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                   Are the tours included with meals?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Due to carrier delays, please allow up to 14 business days for your order to be delivered via our standard shipping method (“standard” at checkout).
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Team & Founders</h2>
+
+        <div class="row g-4">
+          <div class="col-md-3 text-center">
+            <img
+              src="img/imgi_30_P01-150x150.jpg"
+              class="team-img"
+            />
+            <h5 class="mt-3">Jane Smith</h5>
+            <p class="text-muted">CEO & Founder</p>
+          </div>
+
+          <div class="col-md-3 text-center">
+            <img
+              src="img/imgi_31_P02-150x150.jpg"
+              class="team-img"
+            />
+            <h5 class="mt-3">Mary Deff</h5>
+            <p class="text-muted">CFO</p>
+          </div>
+
+          <div class="col-md-3 text-center">
+            <img
+              src="img/imgi_32_P07-150x150.jpg"
+              class="team-img"
+            />
+            <h5 class="mt-3">Gren Johnson</h5>
+            <p class="text-muted">Manager</p>
+          </div>
+
+          <div class="col-md-3 text-center">
+            <img
+              src="img/imgi_33_P04-150x150.jpg"
+              class="team-img"
+            />
+            <h5 class="mt-3">Alis Holmes</h5>
+            <p class="text-muted">Tour Manager</p>
+          </div>
+
+          <div class="row g-4">
+          <div class="col-md-3 text-center">
+            <img
+              src="img/imgi_30_P01-150x150.jpg"
+              class="team-img"
+            />
+            <h5 class="mt-3">Jane Smith</h5>
+            <p class="text-muted">CEO & Founder</p>
+          </div>
+
+          <div class="col-md-3 text-center">
+            <img
+              src="img/imgi_31_P02-150x150.jpg"
+              class="team-img"
+            />
+            <h5 class="mt-3">Mary Deff</h5>
+            <p class="text-muted">CFO</p>
+          </div>
+
+          <div class="col-md-3 text-center">
+            <img
+              src="img/imgi_32_P07-150x150.jpg"
+              class="team-img"
+            />
+            <h5 class="mt-3">Gren Johnson</h5>
+            <p class="text-muted">Manager</p>
+          </div>
+
+          <div class="col-md-3 text-center">
+            <img
+              src="img/imgi_33_P04-150x150.jpg"
+              class="team-img"
+            />
+            <h5 class="mt-3">Alis Holmes</h5>
+            <p class="text-muted">Tour Manager</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-3">
+            <h5 class="text-white mb-3">Travel Tour</h5>
+            <p>
+              Explore the world with ease and comfort. Book your next adventure
+              today.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h6 class="text-white mb-3">Contact</h6>
+            <p><i class="bi bi-telephone"></i> +91-9876543210</p>
+            <p><i class="bi bi-envelope"></i> contact@traveltour.com</p>
+          </div>
+          <div class="col-md-3">
+            <h6 class="text-white mb-3">Useful Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Our Blog</a></li>
+              <li><a href="#">Help & Support</a></li>
+              <li><a href="#">Our Partners</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6 class="text-white mb-3">Pay Safely With Us</h6>
+            <p>Secure payments processed with SSL encryption.</p>
+          </div>
+        </div>
+        <div class="text-center border-top pt-3">
+          <small>© 2025 TravelTour. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
